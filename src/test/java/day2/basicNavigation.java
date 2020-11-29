@@ -8,12 +8,13 @@ public class basicNavigation {
         WebDriverManager.chromedriver().setup();
         ChromeDriver driver = new  ChromeDriver();
         driver.get("http:google.com");
+        driver.manage().window().maximize();
         Thread.sleep(3000);
         String title = driver.getTitle();
         String expectedTitle = "Google";
         System.out.println("Title is...."+title);
         if (expectedTitle.equals(title)){
-            System.out.println("TaESTt aPASSED");
+            System.out.println("TEST PASSED");
         }
         else {
             System.out.println("TEST FAILED");
