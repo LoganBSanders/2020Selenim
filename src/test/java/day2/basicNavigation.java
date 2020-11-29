@@ -22,6 +22,8 @@ public class basicNavigation {
         }
         driver.navigate().to("http://amazon.com");
         driver.navigate().back();
+        driver.navigate().refresh();
+        System.out.println("URL : " + driver.getCurrentUrl());
        // driver.close();
     }
 }
