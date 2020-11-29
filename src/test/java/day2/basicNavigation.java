@@ -13,7 +13,7 @@ public class basicNavigation {
         String expectedTitle = "Google";
         System.out.println("Title is...."+title);
         if (expectedTitle.equals(title)){
-            System.out.println("TEST PASSED");
+            System.out.println("TESTt PASSED");
         }
         else {
             System.out.println("TEST FAILED");
