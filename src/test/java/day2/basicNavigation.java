@@ -20,6 +20,8 @@ public class basicNavigation {
         else {
             System.out.println("TEST FAILED");
         }
-        driver.close();
+        driver.navigate().to("http://amazon.com");
+        driver.navigate().back();
+       // driver.close();
     }
 }
