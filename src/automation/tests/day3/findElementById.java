@@ -34,6 +34,11 @@ public class findElementById {
             System.out.println("failed");
         }
 
+        WebElement logout =driver.findElement(By.linkText("Logout"));
+        logout.click();
+
+        Thread.sleep(2000);
+
        driver.quit();
 
 
